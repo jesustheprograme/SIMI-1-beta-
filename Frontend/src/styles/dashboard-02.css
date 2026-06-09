@@ -1,0 +1,178 @@
+.metric-card,
+.insight-card,
+.chart-card,
+.details-card,
+.product-tree,
+.country-card {
+  padding: 18px;
+}
+
+.metric-card,
+.insight-card {
+  min-height: 190px;
+}
+
+.metric-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.metric-header span,
+.chart-card h3,
+.product-tree h3,
+.country-card h3 {
+  margin: 0;
+  color: var(--foreground);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.metric-card strong,
+.chart-card-header strong,
+.country-card strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--foreground);
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.metric-card p,
+.chart-card p,
+.insight-card p,
+.country-card strong span {
+  margin: 2px 0 0;
+  color: var(--muted-foreground);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.metric-badge {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 7px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.metric-badge.positive {
+  color: oklch(0.48 0.16 145);
+  background: oklch(0.48 0.16 145 / 10%);
+}
+
+.metric-badge.negative {
+  color: var(--destructive);
+  background: color-mix(in oklch, var(--destructive) 10%, var(--background));
+}
+
+.metric-badge.neutral {
+  color: var(--foreground);
+  background: var(--accent);
+}
+
+.mini-trend {
+  width: 100%;
+  height: 48px;
+  margin-top: 16px;
+}
+
+.insight-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.insight-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 12px;
+  fill: none;
+  stroke: var(--foreground);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.insight-card strong {
+  color: var(--foreground);
+}
+
+.insight-card button {
+  width: fit-content;
+  min-height: 36px;
+  margin-top: 12px;
+  border: 1px solid var(--border);
+  background: var(--background);
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: minmax(740px, 1.18fr) minmax(520px, 0.82fr);
+  gap: 28px;
+  margin-top: 28px;
+}
+
+.chart-card {
+  min-height: 390px;
+  overflow: visible;
+}
+
+.chart-card-header {
+  margin-bottom: 16px;
+}
+
+.area-chart,
+.bar-chart {
+  height: 300px;
+  width: 100%;
+  min-width: 0;
+  overflow: visible;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: minmax(880px, 1fr) 420px;
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.details-card {
+  min-width: 0;
+}
+
+.details-table-wrap {
+  overflow-x: auto;
+}
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.details-table th,
+.details-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 11px 12px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.details-table th {
+  color: var(--muted-foreground);
+  background: var(--accent);
+  font-weight: 600;
+}
+
+.status {
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 12px;
+  font-weight: 600;
+}

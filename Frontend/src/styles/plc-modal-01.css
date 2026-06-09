@@ -1,0 +1,185 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  background: color-mix(in oklch, var(--foreground) 34%, transparent);
+  backdrop-filter: blur(7px);
+}
+
+.plc-modal {
+  position: relative;
+  display: flex;
+  width: min(1440px, 100%);
+  max-height: min(88vh, 920px);
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 4px);
+  background: color-mix(in oklch, var(--background) 95%, var(--accent));
+  box-shadow: 0 28px 80px color-mix(in oklch, var(--foreground) 22%, transparent);
+}
+
+.plc-modal.iframe-modal {
+  width: min(1500px, calc(100vw - 56px));
+  height: min(900px, calc(100vh - 56px));
+  max-height: none;
+  background: var(--background);
+}
+
+.plc-iframe-title,
+.plc-iframe-titlebar,
+.plc-iframe-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.plc-iframe-titlebar strong {
+  color: var(--foreground);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.plc-iframe-title p {
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: 13px;
+}
+
+.plc-iframe-title h2 {
+  margin: 0;
+  color: var(--foreground);
+  font-size: 18px;
+}
+
+.plc-iframe-titlebar a,
+.plc-iframe-actions a {
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0 10px;
+  color: var(--foreground);
+  background: var(--background);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.plc-iframe-titlebar a:hover,
+.plc-iframe-actions a:hover {
+  background: var(--accent);
+  transform: translateY(-1px);
+}
+
+.plc-panel-frame {
+  width: 100%;
+  min-height: 0;
+  flex: 1;
+  border: 0;
+  background: #eef2f6;
+  overflow: hidden;
+}
+
+.plc-modal-header,
+.plc-brand,
+.plc-actions,
+.plc-panel-heading,
+.plc-workbench {
+  display: flex;
+  align-items: center;
+}
+
+.plc-modal-header {
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid var(--border);
+  padding: 18px 22px;
+  background: var(--card);
+}
+
+.plc-brand {
+  gap: 12px;
+}
+
+.plc-brand-mark {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius);
+  background:
+    linear-gradient(90deg, transparent 42%, color-mix(in oklch, var(--background) 90%, transparent) 42% 58%, transparent 58%),
+    linear-gradient(0deg, transparent 42%, color-mix(in oklch, var(--background) 90%, transparent) 42% 58%, transparent 58%),
+    var(--foreground);
+}
+
+.plc-brand p,
+.plc-table-header p,
+.plc-panel-heading p {
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: 13px;
+}
+
+.plc-brand h2,
+.plc-panel-card h3,
+.plc-quality h3,
+.plc-table-header h3 {
+  margin: 0;
+  color: var(--foreground);
+}
+
+.plc-actions {
+  gap: 10px;
+}
+
+.sync-pill,
+.plc-chip {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0 11px;
+  color: var(--muted-foreground);
+  background: var(--background);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.modal-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  z-index: 2;
+  width: 34px;
+  min-height: 34px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--muted-foreground);
+  background: color-mix(in oklch, var(--card) 84%, var(--accent));
+  box-shadow: 0 10px 24px color-mix(in oklch, var(--foreground) 10%, transparent);
+  padding: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.modal-close:hover {
+  border-color: color-mix(in oklch, var(--muted-foreground) 35%, var(--border));
+  color: var(--foreground);
+  background: var(--card);
+  transform: translateY(-1px);
+}

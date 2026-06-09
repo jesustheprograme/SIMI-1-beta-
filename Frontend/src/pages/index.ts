@@ -1,0 +1,7 @@
+export { DashboardPage } from './DashboardPage'
+export { PlanoPage } from './PlanoPage'
+export { ProcesosPage } from './ProcesosPage'
+export { ProcessDetailPage } from './ProcessDetailPage'
+export { ProcessHistoryPage } from './ProcessHistoryPage'
+export * from './telemetria'
+export { WorkspacePlaceholder } from './WorkspacePlaceholder'

@@ -1,0 +1,178 @@
+.field-group {
+  display: grid;
+  gap: 7px;
+}
+
+.field-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-shell {
+  display: grid;
+  min-height: 44px;
+  grid-template-columns: 40px minmax(0, 1fr) 40px;
+  align-items: center;
+  border: 1px solid var(--input);
+  border-radius: var(--radius);
+  background: var(--background);
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.input-shell.no-action {
+  grid-template-columns: 40px minmax(0, 1fr);
+}
+
+.input-shell:focus-within {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.field-icon,
+.field-action {
+  color: var(--muted-foreground);
+}
+
+.field-icon {
+  width: 16px;
+  height: 16px;
+  justify-self: center;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.field-action {
+  display: grid;
+  width: 40px;
+  min-height: 44px;
+  place-items: center;
+  border-radius: var(--radius);
+  padding: 0;
+  background: transparent;
+}
+
+.field-action svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.field-action:hover {
+  color: var(--foreground);
+  background: transparent;
+  transform: none;
+}
+
+input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  color: var(--foreground);
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  outline: none;
+}
+
+input::placeholder {
+  color: color-mix(in oklch, var(--muted-foreground) 60%, transparent);
+}
+
+button {
+  min-height: 44px;
+  border: 0;
+  border-radius: 6px;
+  padding: 0 18px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+  cursor: pointer;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  color: var(--background);
+  background: var(--foreground);
+  box-shadow: 0 1px 0 color-mix(in oklch, var(--background) 8%, transparent) inset;
+}
+
+.primary-button:hover:not(:disabled) {
+  background: color-mix(in oklch, var(--foreground) 90%, transparent);
+}
+
+.button-arrow {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  transition: transform 180ms ease;
+}
+
+.primary-button:hover:not(:disabled) .button-arrow {
+  transform: translateX(2px);
+}
+
+.primary-button:active:not(:disabled),
+.secondary-button:active:not(:disabled),
+.mode-link:active {
+  transform: translateY(0);
+}
+
+.secondary-button {
+  width: 100%;
+  border: 1px solid var(--input);
+  color: var(--foreground);
+  background: var(--background);
+}
+
+.secondary-button:hover:not(:disabled) {
+  border-color: var(--input);
+  background: var(--accent);
+}
+
+.sso-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  aspect-ratio: 1;
+}

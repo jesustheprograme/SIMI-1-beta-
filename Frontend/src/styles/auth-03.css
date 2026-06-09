@@ -1,0 +1,156 @@
+.text-button,
+.mode-link {
+  min-height: auto;
+  border-radius: 0;
+  padding: 0;
+  color: var(--muted-foreground);
+  background: transparent;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.text-button:hover,
+.mode-link:hover {
+  color: var(--foreground);
+}
+
+.mode-link {
+  margin-top: -2px;
+  text-align: center;
+}
+
+.mode-link strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.mode-link:hover strong {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.check-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted-foreground);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.check-row input {
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--input);
+  accent-color: var(--foreground);
+}
+
+.divider {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 18px;
+  color: var(--muted-foreground);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.divider::before,
+.divider::after {
+  height: 1px;
+  content: "";
+  background: var(--border);
+}
+
+.alert {
+  width: min(100%, 384px);
+  box-sizing: border-box;
+  border: 1px solid color-mix(in oklch, var(--primary) 24%, var(--border));
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  color: var(--primary);
+  background: color-mix(in oklch, var(--primary) 7%, var(--background));
+  font-size: 13px;
+}
+
+.alert.error {
+  border-color: color-mix(in oklch, var(--destructive) 35%, var(--border));
+  color: var(--destructive);
+  background: color-mix(in oklch, var(--destructive) 8%, var(--background));
+}
+
+.auth-loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(10, 12, 14, 0.48);
+  backdrop-filter: blur(5px);
+}
+
+.auth-loading-dialog {
+  display: grid;
+  min-width: min(320px, calc(100vw - 48px));
+  justify-items: center;
+  gap: 8px;
+  border: 1px solid color-mix(in oklch, var(--border) 78%, transparent);
+  border-radius: 8px;
+  padding: 26px 30px;
+  color: var(--foreground);
+  background: var(--card);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+  text-align: center;
+}
+
+.auth-loading-dialog strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.auth-loading-dialog small {
+  color: var(--muted-foreground);
+  font-size: 12px;
+}
+
+.auth-loading-spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--border);
+  border-top-color: var(--foreground);
+  border-radius: 50%;
+  animation: auth-loading-spin 700ms linear infinite;
+}
+
+@keyframes auth-loading-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.session-card {
+  align-items: flex-start;
+}
+
+.avatar {
+  width: 54px;
+  height: 54px;
+  color: var(--background);
+  background: var(--foreground);
+}
+
+.role-pill {
+  width: fit-content;
+  border: 1px solid var(--input);
+  border-radius: 999px;
+  padding: 8px 12px;
+  color: var(--foreground);
+  background: var(--background);
+  font-size: 13px;
+  font-weight: 600;
+}
+

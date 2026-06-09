@@ -1,0 +1,4 @@
+◇ injected env (2) from .env.local // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+◇ injected env (5) from .env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+Auth API escuchando en http://0.0.0.0:4100
+MongoDB conectado a la base SIMI-1

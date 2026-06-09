@@ -1,0 +1,500 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body { font-family: Arial, sans-serif; color: #111827; }
+    h1 { margin: 0 0 4px; font-size: 22px; }
+    p { margin: 0 0 16px; color: #4b5563; }
+    table { border-collapse: collapse; width: 100%; }
+    th { background: #111827; color: #ffffff; font-weight: 700; }
+    th, td { border: 1px solid #d1d5db; padding: 8px; font-size: 12px; text-align: left; }
+    tbody tr:nth-child(even) { background: #f9fafb; }
+  </style>
+</head>
+<body>
+  <h1>Camara Platano 2</h1>
+  <p>Juancito - Camara Platano 2 - 14 registros</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Registro</th>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th>Grupo / Origen</th>
+        <th>Variable</th>
+        <th>Sensor</th>
+        <th>Medida</th>
+        <th>Valor</th>
+        <th>Unidad</th>
+        <th>Observacion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+            <td>1</td>
+            <td>27/5/2026</td>
+            <td>7:11:25 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Temperatura Camara fria</td>
+            <td>Sensores Temperatura</td>
+            <td>8.0 C</td>
+            <td>8.0</td>
+            <td>C</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>1</td>
+            <td>27/5/2026</td>
+            <td>7:11:25 p. m.</td>
+            <td>Variables individuales</td>
+            <td>CO2 Almacen</td>
+            <td>Sensores co2</td>
+            <td>478 ppm</td>
+            <td>478</td>
+            <td>ppm</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>1</td>
+            <td>27/5/2026</td>
+            <td>7:11:25 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Humedad Laboratorio</td>
+            <td>Sensores Humedad</td>
+            <td>42 %</td>
+            <td>42</td>
+            <td>%</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>2</td>
+            <td>27/5/2026</td>
+            <td>7:11:20 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Temperatura Camara fria</td>
+            <td>Sensores Temperatura</td>
+            <td>6.8 C</td>
+            <td>6.8</td>
+            <td>C</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>2</td>
+            <td>27/5/2026</td>
+            <td>7:11:20 p. m.</td>
+            <td>Variables individuales</td>
+            <td>CO2 Almacen</td>
+            <td>Sensores co2</td>
+            <td>484 ppm</td>
+            <td>484</td>
+            <td>ppm</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>2</td>
+            <td>27/5/2026</td>
+            <td>7:11:20 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Humedad Laboratorio</td>
+            <td>Sensores Humedad</td>
+            <td>44 %</td>
+            <td>44</td>
+            <td>%</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>3</td>
+            <td>27/5/2026</td>
+            <td>7:11:15 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Temperatura Camara fria</td>
+            <td>Sensores Temperatura</td>
+            <td>5.6 C</td>
+            <td>5.6</td>
+            <td>C</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>3</td>
+            <td>27/5/2026</td>
+            <td>7:11:15 p. m.</td>
+            <td>Variables individuales</td>
+            <td>CO2 Almacen</td>
+            <td>Sensores co2</td>
+            <td>501 ppm</td>
+            <td>501</td>
+            <td>ppm</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>3</td>
+            <td>27/5/2026</td>
+            <td>7:11:15 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Humedad Laboratorio</td>
+            <td>Sensores Humedad</td>
+            <td>44 %</td>
+            <td>44</td>
+            <td>%</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>4</td>
+            <td>27/5/2026</td>
+            <td>7:11:10 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Temperatura Camara fria</td>
+            <td>Sensores Temperatura</td>
+            <td>5.1 C</td>
+            <td>5.1</td>
+            <td>C</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>4</td>
+            <td>27/5/2026</td>
+            <td>7:11:10 p. m.</td>
+            <td>Variables individuales</td>
+            <td>CO2 Almacen</td>
+            <td>Sensores co2</td>
+            <td>522 ppm</td>
+            <td>522</td>
+            <td>ppm</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>4</td>
+            <td>27/5/2026</td>
+            <td>7:11:10 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Humedad Laboratorio</td>
+            <td>Sensores Humedad</td>
+            <td>42 %</td>
+            <td>42</td>
+            <td>%</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>5</td>
+            <td>27/5/2026</td>
+            <td>7:11:05 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Temperatura Camara fria</td>
+            <td>Sensores Temperatura</td>
+            <td>5.4 C</td>
+            <td>5.4</td>
+            <td>C</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>5</td>
+            <td>27/5/2026</td>
+            <td>7:11:05 p. m.</td>
+            <td>Variables individuales</td>
+            <td>CO2 Almacen</td>
+            <td>Sensores co2</td>
+            <td>535 ppm</td>
+            <td>535</td>
+            <td>ppm</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>5</td>
+            <td>27/5/2026</td>
+            <td>7:11:05 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Humedad Laboratorio</td>
+            <td>Sensores Humedad</td>
+            <td>40 %</td>
+            <td>40</td>
+            <td>%</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>6</td>
+            <td>27/5/2026</td>
+            <td>7:11:00 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Temperatura Camara fria</td>
+            <td>Sensores Temperatura</td>
+            <td>6.4 C</td>
+            <td>6.4</td>
+            <td>C</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>6</td>
+            <td>27/5/2026</td>
+            <td>7:11:00 p. m.</td>
+            <td>Variables individuales</td>
+            <td>CO2 Almacen</td>
+            <td>Sensores co2</td>
+            <td>534 ppm</td>
+            <td>534</td>
+            <td>ppm</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>6</td>
+            <td>27/5/2026</td>
+            <td>7:11:00 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Humedad Laboratorio</td>
+            <td>Sensores Humedad</td>
+            <td>39 %</td>
+            <td>39</td>
+            <td>%</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>7</td>
+            <td>27/5/2026</td>
+            <td>7:10:55 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Temperatura Camara fria</td>
+            <td>Sensores Temperatura</td>
+            <td>7.5 C</td>
+            <td>7.5</td>
+            <td>C</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>7</td>
+            <td>27/5/2026</td>
+            <td>7:10:55 p. m.</td>
+            <td>Variables individuales</td>
+            <td>CO2 Almacen</td>
+            <td>Sensores co2</td>
+            <td>522 ppm</td>
+            <td>522</td>
+            <td>ppm</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>7</td>
+            <td>27/5/2026</td>
+            <td>7:10:55 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Humedad Laboratorio</td>
+            <td>Sensores Humedad</td>
+            <td>39 %</td>
+            <td>39</td>
+            <td>%</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>8</td>
+            <td>27/5/2026</td>
+            <td>7:10:50 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Temperatura Camara fria</td>
+            <td>Sensores Temperatura</td>
+            <td>8.3 C</td>
+            <td>8.3</td>
+            <td>C</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>8</td>
+            <td>27/5/2026</td>
+            <td>7:10:50 p. m.</td>
+            <td>Variables individuales</td>
+            <td>CO2 Almacen</td>
+            <td>Sensores co2</td>
+            <td>504 ppm</td>
+            <td>504</td>
+            <td>ppm</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>8</td>
+            <td>27/5/2026</td>
+            <td>7:10:50 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Humedad Laboratorio</td>
+            <td>Sensores Humedad</td>
+            <td>40 %</td>
+            <td>40</td>
+            <td>%</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>9</td>
+            <td>27/5/2026</td>
+            <td>7:10:45 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Temperatura Camara fria</td>
+            <td>Sensores Temperatura</td>
+            <td>8.3 C</td>
+            <td>8.3</td>
+            <td>C</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>9</td>
+            <td>27/5/2026</td>
+            <td>7:10:45 p. m.</td>
+            <td>Variables individuales</td>
+            <td>CO2 Almacen</td>
+            <td>Sensores co2</td>
+            <td>492 ppm</td>
+            <td>492</td>
+            <td>ppm</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>9</td>
+            <td>27/5/2026</td>
+            <td>7:10:45 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Humedad Laboratorio</td>
+            <td>Sensores Humedad</td>
+            <td>42 %</td>
+            <td>42</td>
+            <td>%</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>10</td>
+            <td>27/5/2026</td>
+            <td>7:10:40 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Temperatura Camara fria</td>
+            <td>Sensores Temperatura</td>
+            <td>7.5 C</td>
+            <td>7.5</td>
+            <td>C</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>10</td>
+            <td>27/5/2026</td>
+            <td>7:10:40 p. m.</td>
+            <td>Variables individuales</td>
+            <td>CO2 Almacen</td>
+            <td>Sensores co2</td>
+            <td>491 ppm</td>
+            <td>491</td>
+            <td>ppm</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>10</td>
+            <td>27/5/2026</td>
+            <td>7:10:40 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Humedad Laboratorio</td>
+            <td>Sensores Humedad</td>
+            <td>43 %</td>
+            <td>43</td>
+            <td>%</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>11</td>
+            <td>27/5/2026</td>
+            <td>7:10:40 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Temperatura Camara fria</td>
+            <td>Sensores Temperatura</td>
+            <td>6.5 C</td>
+            <td>6.5</td>
+            <td>C</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>11</td>
+            <td>27/5/2026</td>
+            <td>7:10:40 p. m.</td>
+            <td>Variables individuales</td>
+            <td>CO2 Almacen</td>
+            <td>Sensores co2</td>
+            <td>500 ppm</td>
+            <td>500</td>
+            <td>ppm</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>11</td>
+            <td>27/5/2026</td>
+            <td>7:10:40 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Humedad Laboratorio</td>
+            <td>Sensores Humedad</td>
+            <td>43 %</td>
+            <td>43</td>
+            <td>%</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>12</td>
+            <td>27/5/2026</td>
+            <td>7:10:35 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Temperatura Camara fria</td>
+            <td>Sensores Temperatura</td>
+            <td>6.5 C</td>
+            <td>6.5</td>
+            <td>C</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>12</td>
+            <td>27/5/2026</td>
+            <td>7:10:35 p. m.</td>
+            <td>Variables individuales</td>
+            <td>CO2 Almacen</td>
+            <td>Sensores co2</td>
+            <td>500 ppm</td>
+            <td>500</td>
+            <td>ppm</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>12</td>
+            <td>27/5/2026</td>
+            <td>7:10:35 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Humedad Laboratorio</td>
+            <td>Sensores Humedad</td>
+            <td>43 %</td>
+            <td>43</td>
+            <td>%</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>13</td>
+            <td>27/5/2026</td>
+            <td>7:10:30 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Temperatura Camara fria</td>
+            <td>Sensores Temperatura</td>
+            <td>5.7 C</td>
+            <td>5.7</td>
+            <td>C</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>13</td>
+            <td>27/5/2026</td>
+            <td>7:10:30 p. m.</td>
+            <td>Variables individuales</td>
+            <td>CO2 Almacen</td>
+            <td>Sensores co2</td>
+            <td>515 ppm</td>
+            <td>515</td>
+            <td>ppm</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>13</td>
+            <td>27/5/2026</td>
+            <td>7:10:30 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Humedad Laboratorio</td>
+            <td>Sensores Humedad</td>
+            <td>42 %</td>
+            <td>42</td>
+            <td>%</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>14</td>
+            <td>27/5/2026</td>
+            <td>7:10:28 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Temperatura Camara fria</td>
+            <td>Sensores Temperatura</td>
+            <td>5.5 C</td>
+            <td>5.5</td>
+            <td>C</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>14</td>
+            <td>27/5/2026</td>
+            <td>7:10:28 p. m.</td>
+            <td>Variables individuales</td>
+            <td>CO2 Almacen</td>
+            <td>Sensores co2</td>
+            <td>525 ppm</td>
+            <td>525</td>
+            <td>ppm</td>
+            <td>Dentro del rango</td>
+          </tr><tr>
+            <td>14</td>
+            <td>27/5/2026</td>
+            <td>7:10:28 p. m.</td>
+            <td>Variables individuales</td>
+            <td>Humedad Laboratorio</td>
+            <td>Sensores Humedad</td>
+            <td>40 %</td>
+            <td>40</td>
+            <td>%</td>
+            <td>Dentro del rango</td>
+          </tr>
+    </tbody>
+  </table>
+</body>
+</html>

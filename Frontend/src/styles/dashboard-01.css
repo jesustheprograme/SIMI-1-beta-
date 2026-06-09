@@ -1,0 +1,192 @@
+.dashboard-page {
+  width: 100%;
+  max-width: 1840px;
+  margin: 0 auto;
+  padding: 28px clamp(56px, 7vw, 140px) 72px;
+}
+
+.dashboard-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.breadcrumb-nav {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.breadcrumb-nav span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.breadcrumb-nav .is-current {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.breadcrumb-nav svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: color-mix(in oklch, var(--muted-foreground) 72%, transparent);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.date-filter {
+  position: relative;
+  z-index: 3;
+}
+
+.date-chip {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0 12px;
+  color: var(--foreground);
+  background: var(--card);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.date-chip:hover {
+  background: var(--accent);
+}
+
+.date-chip svg {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.date-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  display: grid;
+  width: 230px;
+  gap: 3px;
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 13px;
+  padding: 8px;
+  color: #f5f5f5;
+  background: #111;
+  box-shadow:
+    0 18px 46px rgb(0 0 0 / 38%),
+    0 1px 0 rgb(255 255 255 / 7%) inset;
+  transform-origin: top right;
+  animation: popover-soft-in 180ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.date-menu > button {
+  min-height: 42px;
+  justify-content: flex-start;
+  border-radius: 8px;
+  padding: 0 12px;
+  color: #e9e9e9;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 650;
+  text-align: left;
+}
+
+.date-menu > button:hover,
+.date-menu > button.is-selected {
+  background: #202020;
+}
+
+.date-menu-custom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  border-top: 1px solid rgb(255 255 255 / 10%);
+  margin-top: 6px;
+  padding-top: 8px;
+}
+
+.date-menu-custom label {
+  gap: 4px;
+  color: #a6a6a6;
+  font-size: 11px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.date-menu-custom input {
+  min-height: 32px;
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 8px;
+  padding: 0 6px;
+  color: #f5f5f5;
+  background: #171717;
+  font-size: 12px;
+}
+
+.dashboard-heading {
+  margin-bottom: 32px;
+}
+
+.dashboard-heading.compact {
+  margin-bottom: 24px;
+}
+
+.dashboard-heading h1 {
+  margin: 0;
+  color: var(--foreground);
+  font-size: clamp(30px, 3vw, 40px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+.dashboard-heading p:not(.workspace-kicker) {
+  margin: 8px 0 0;
+  color: var(--muted-foreground);
+  font-size: 14px;
+}
+
+.dashboard-section h2,
+.details-card h2 {
+  margin: 0 0 14px;
+  color: var(--foreground);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(270px, 1fr)) minmax(340px, 0.9fr);
+  gap: 28px;
+}
+
+.metric-card,
+.insight-card,
+.chart-card,
+.details-card,
+.product-tree,
+.country-card,
+.workspace-panel {
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 2px);
+  background: var(--card);
+  box-shadow: 0 10px 28px color-mix(in oklch, var(--foreground) 4%, transparent);
+}

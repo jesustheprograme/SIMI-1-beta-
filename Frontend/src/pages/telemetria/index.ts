@@ -1,0 +1,5 @@
+export { ControladoresPage } from './ControladoresPage'
+export { GruposPage } from './GruposPage'
+export { PlcJepkomPage } from './PlcJepkomPage'
+export { SensoresPage } from './SensoresPage'
+export { SiemensReadingsPage } from './SiemensReadingsPage'

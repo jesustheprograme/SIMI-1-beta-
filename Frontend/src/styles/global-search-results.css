@@ -1,0 +1,87 @@
+.global-search-results {
+  display: grid;
+  gap: 4px;
+}
+
+.global-search-result {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 0;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  padding: 9px;
+  color: rgb(255 255 255 / 86%);
+  text-align: left;
+  background: transparent;
+  font-weight: 400;
+  transition:
+    border-color 140ms ease,
+    background-color 140ms ease;
+}
+
+.global-search-result:hover,
+.global-search-result[aria-selected="true"] {
+  border-color: rgb(255 255 255 / 9%);
+  background: rgb(255 255 255 / 7%);
+}
+
+.search-result-copy,
+.search-result-copy > span {
+  display: flex;
+  min-width: 0;
+}
+
+.search-result-copy {
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.search-result-copy > span {
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.search-result-copy strong,
+.search-result-copy em {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-result-copy strong {
+  color: rgb(255 255 255 / 92%);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.search-result-copy small,
+.search-result-copy em {
+  color: rgb(255 255 255 / 48%);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.search-result-copy em {
+  font-style: normal;
+  letter-spacing: 0.01em;
+}
+
+.global-search-empty {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 30px 12px;
+  color: rgb(255 255 255 / 45%);
+  text-align: center;
+  font-size: 12px;
+}
+
+.global-search-empty svg { width: 20px; margin-bottom: 4px; }
+.global-search-empty strong {
+  color: rgb(255 255 255 / 86%);
+  font-size: 13px;
+  font-weight: 500;
+}

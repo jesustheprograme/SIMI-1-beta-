@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Industrial control room">
+  <rect width="1200" height="900" fill="#11314d"/>
+  <path d="M0 640h1200v260H0z" fill="#1f465d"/>
+  <path d="M0 665h1200" stroke="#6ca3a7" stroke-width="4" opacity=".35"/>
+  <path d="M140 180h920v430H140z" fill="#183a56"/>
+  <path d="M190 225h250v150H190zM475 225h250v150H475zM760 225h250v150H760z" fill="#2f7f88" opacity=".72"/>
+  <path d="M190 420h820M190 475h820M190 530h820" stroke="#d7e5ea" stroke-width="10" opacity=".22"/>
+  <path d="M120 610h960" stroke="#7fd4de" stroke-width="16" opacity=".42"/>
+  <path d="M220 700h760" stroke="#d7e5ea" stroke-width="12" opacity=".28"/>
+  <circle cx="270" cy="300" r="32" fill="#f7fbff" opacity=".5"/>
+  <circle cx="555" cy="300" r="32" fill="#f7fbff" opacity=".5"/>
+  <circle cx="840" cy="300" r="32" fill="#f7fbff" opacity=".5"/>
+</svg>

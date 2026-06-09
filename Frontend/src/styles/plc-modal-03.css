@@ -1,0 +1,88 @@
+
+.plc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.plc-table th,
+.plc-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  white-space: nowrap;
+}
+.process-records-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 4px);
+  background: var(--card);
+  box-shadow: 0 10px 28px color-mix(in oklch, var(--foreground) 4%, transparent);
+  transform: rotateX(180deg);
+}
+
+.process-records-table {
+  width: 100%;
+  min-width: max(100%, calc(var(--records-columns, 5) * 180px));
+  border-collapse: collapse;
+  table-layout: fixed;
+  transform: rotateX(180deg);
+} 
+.plc-table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color: var(--muted-foreground);
+  background: var(--accent);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.plc-table td:nth-child(2) {
+  min-width: 300px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  font-weight: 600;
+}
+
+.plc-empty {
+  padding: 38px 12px;
+  color: var(--muted-foreground);
+  text-align: center;
+}
+
+.plc-badge {
+  display: inline-flex;
+  min-width: 60px;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.plc-badge.good {
+  color: oklch(0.48 0.16 145);
+  background: oklch(0.48 0.16 145 / 10%);
+}
+
+.plc-badge.bad {
+  color: var(--destructive);
+  background: color-mix(in oklch, var(--destructive) 10%, var(--background));
+}
+
+.workspace-panel {
+  min-height: 170px;
+  padding: 20px;
+}
+
+.workspace-panel p {
+  max-width: 360px;
+  margin: 12px 0 0;
+  color: var(--muted-foreground);
+  font-size: 14px;
+}
+

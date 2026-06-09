@@ -1,0 +1,196 @@
+.login-page {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 1fr);
+  overflow: hidden;
+  background: var(--background);
+}
+
+.brand-panel,
+.auth-panel {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.brand-panel {
+  position: relative;
+  justify-content: space-between;
+  padding: 48px;
+  color: var(--brand-foreground);
+  background: var(--brand);
+}
+
+.brand-panel::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  background: linear-gradient(180deg, transparent, color-mix(in oklch, var(--brand) 92%, black));
+}
+
+.brand-header,
+.brand-copy,
+.brand-footnote {
+  position: relative;
+  z-index: 1;
+}
+
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 10px;
+  font-weight: 200;
+  height: 28px;
+  width: 110px;
+  letter-spacing: 0;
+}
+
+.brand-mark,
+.avatar {
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+.brand-mark {
+  width: 28px;
+  height: 28px;
+  background: color-mix(in oklch, var(--brand-foreground) 10%, transparent);
+}
+
+.brand-mark::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  content: "";
+  background: var(--brand-foreground);
+}
+
+.brand-copy {
+  width: min(100%, 448px);
+  margin-bottom: clamp(42px, 8vh, 86px);
+}
+
+.brand-panel h1 {
+  max-width: 430px;
+  margin: 0;
+  color: var(--brand-foreground);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.intro {
+  max-width: 455px;
+  margin: 24px 0 0;
+  color: color-mix(in oklch, var(--brand-foreground) 70%, transparent);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.quote {
+  margin: 28px 0 0;
+  border-top: 1px solid color-mix(in oklch, var(--brand-foreground) 10%, transparent);
+  padding-top: 16px;
+  color: color-mix(in oklch, var(--brand-foreground) 60%, transparent);
+}
+
+.quote blockquote {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.quote figcaption {
+  margin-top: 8px;
+  color: color-mix(in oklch, var(--brand-foreground) 40%, transparent);
+  font-size: 13px;
+}
+
+.brand-footnote {
+  margin: 0;
+  color: color-mix(in oklch, var(--brand-foreground) 50%, transparent);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+.auth-panel {
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 40px 24px;
+  background: var(--background);
+}
+
+.login-form,
+.session-card {
+  display: flex;
+  width: min(100%, 384px);
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-login-hero,
+.mobile-login-heading,
+.mobile-login-stats,
+.mobile-login-footer {
+  display: none;
+}
+
+.login-form h2,
+.session-card h2 {
+  margin: 0;
+  color: var(--foreground);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.muted {
+  margin: 8px 0 12px;
+  color: var(--muted-foreground);
+  font-size: 14px;
+}
+
+.mobile-brand {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-bottom: 24px;
+  color: var(--foreground);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mobile-brand-mark {
+  display: block;
+  width: 132px;
+  height: 64px;
+  border-radius: 4px;
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+}
+
+.field-label,
+label {
+  display: grid;
+  gap: 7px;
+  color: var(--foreground);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
