@@ -1,0 +1,42 @@
+@media (max-width: 980px) {
+  .overview {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .workbench {
+    flex-direction: column;
+  }
+
+  .side-panel {
+    width: 100%;
+    flex-basis: auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .app-shell {
+    width: min(100% - 20px, 1440px);
+    padding: 16px 0;
+  }
+
+  .topbar,
+  .actions,
+  .table-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .overview,
+  .side-panel {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .table-wrap {
+    height: 58vh;
+  }
+}

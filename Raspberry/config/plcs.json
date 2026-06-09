@@ -1,0 +1,63 @@
+{
+  "plcs": [
+    {
+      "name": "PLC_n1",
+      "protocol": "modbus-tcp",
+      "host": "192.168.18.112",
+      "port": 502,
+      "enabled": true
+    },
+    {
+      "name": "PLC_SIEMENS_S7_1",
+      "protocol": "siemens-s7",
+      "host": "192.168.0.10",
+      "port": 102,
+      "rack": 0,
+      "slot": 1,
+      "enabled": true,
+      "tags": [
+        {
+          "tag": "temperatura",
+          "address": "DB1,REAL0",
+          "type": "REAL"
+        },
+        {
+          "tag": "humedad",
+          "address": "DB1,REAL4",
+          "type": "REAL"
+        },
+        {
+          "tag": "co2",
+          "address": "DB1,INT8",
+          "type": "INT"
+        }
+      ]
+    },
+    {
+      "name": "PLC_CODESYS_1",
+      "protocol": "codesys-opcua",
+      "endpoint": "opc.tcp://192.168.0.50:4840",
+      "enabled": false,
+      "tags": [
+        {
+          "tag": "TK_NH3.GENERAL.CMD",
+          "nodeId": "ns=4;s=|var|Application.GVL.TK_NH3.GENERAL.CMD",
+          "type": "INT"
+        }
+      ]
+    },
+    {
+      "name": "PLC_PROFINET_1",
+      "protocol": "profinet-opcua-gateway",
+      "endpoint": "opc.tcp://192.168.0.60:4840",
+      "enabled": false,
+      "tags": [
+        {
+          "tag": "PROFINET.DEVICE_1.VALUE",
+          "nodeId": "ns=2;s=Device_1.Value",
+          "type": "REAL"
+        }
+      ]
+    }
+  ]
+}

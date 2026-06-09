@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1779313449715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1779313449715,
+            "name": "Commit-0",
+            "content": "const path = require(\"path\");\n\nrequire(\"dotenv\").config();\n\nconst rootPath = path.join(__dirname, \"..\");\n\n// Topics publicos del sistema. Mantenerlos centralizados evita diferencias\n// entre MQTT Explorer, backend y documentacion.\nconst topics = {\n  readRequest: \"consulte/topic\", //\n  writeRequest: \"consulte/write\", //\n  plcData: \"topic_plc_data\", //\n  plcChanges: process.env.MQTT_TOPIC_CHANGES || \"topic_plc_changes\", //\n  plcStatus: process.env.MQTT_TOPIC_STATUS || \"topic_plc_status\", //\n  writeConfirm: \"topic/registerCalibration/data\", //\n};\n\nmodule.exports = {\n  appPort: Number(process.env.PORT || 3000),\n  publicPath: path.join(rootPath, \"public\"),\n  plcConfigPath: process.env.PLC_CONFIG_PATH || path.join(rootPath, \"config\", \"plcs.json\"),\n  variablesPath: process.env.VARIABLES_PATH || path.join(rootPath, \"variables.json\"),\n  mqtt: {\n    enabled: process.env.MQTT_ENABLED !== \"false\",\n    url: process.env.MQTT_URL || \"ws://127.0.0.1:8083/mqtt\",\n    clientId: process.env.MQTT_CLIENT_ID || `camposol_${Date.now()}`,\n    reconnectMs: Number(process.env.MQTT_RECONNECT_MS || 10000),\n    // Protege broker/web si muchos tags cambian al mismo tiempo.\n    maxMessagesPerSecond: Number(process.env.MAX_MQTT_MESSAGES_PER_SECOND || 10),\n  },\n  plc: {\n    // Lectura rapida para monitoreo; no implica control deterministico del PLC.\n    pollIntervalMs: Number(process.env.PLC_POLL_INTERVAL_MS || 250),\n    socketTimeoutMs: Number(process.env.PLC_SOCKET_TIMEOUT_MS || 1500),\n    badBlockRetryMs: Number(process.env.BAD_BLOCK_RETRY_MS || 60000),\n    // Snapshot retenido: sincroniza clientes nuevos o reconectados.\n    snapshotIntervalMs: Number(process.env.SNAPSHOT_INTERVAL_MS || 60000),\n    // Hysteresis simple para no publicar ruido analogico menor a 1 decimal.\n    changeTolerance: Number(process.env.CHANGE_TOLERANCE || 0.1),\n  },\n  topics,\n};\n"
+        }
+    ]
+}

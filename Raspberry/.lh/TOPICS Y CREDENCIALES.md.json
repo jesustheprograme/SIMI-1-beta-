@@ -1,0 +1,30 @@
+{
+    "sourceFile": "TOPICS Y CREDENCIALES.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1779285560687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1779294210459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,28 +1,48 @@\n-\r\n-Topic para visualizar todos los datos MQTT\r\n-\r\n-    topic_plc_data\r\n-\r\n-Topic para ver unicamente los cambios\r\n-    \r\n-    topic_plc_changes\r\n-\r\n-Publicar el paquete completoe de datos leidos:\r\n-\r\n-    consulte/topic\r\n-\r\n-Forzar una lectura desde MQTT\r\n-\r\n-    cosulte/write\r\n-\r\n-Para enviar un escritura al PLC\r\n-\r\n-    topic/registerCalibration/data  \r\n-\r\n-\r\n-Usuario de lWebsocket\r\n-\r\n-usuario: jepkom123\r\n-\r\n-contraseña:  public\r\n-\r\n+# Topics MQTT\n+\n+Broker local:\n+\n+```txt\n+ws://127.0.0.1:8083/mqtt\n+```\n+\n+## Suscribirse\n+\n+| Topic | Para que sirve |\n+| --- | --- |\n+| `topic_plc_changes` | Ver cambios del PLC en vivo. |\n+| `topic_plc_data` | Ver snapshot completo retenido. |\n+| `topic_plc_status` | Ver estado: `ONLINE`, `DEGRADED`, `READ_TIMEOUT`, `PLC_OFFLINE`. |\n+| `#` | Ver todo durante pruebas. |\n+\n+\n+CREDENCIALES\n+\n+usuario: admin\n+\n+contraseña: jepkom123\n+\n+\n+## Publicar\n+\n+Forzar lectura:\n+\n+```txt\n+Topic: consulte/topic\n+Payload: {\"read\":true}\n+```\n+\n+Escribir registro:\n+\n+```txt\n+Topic: consulte/write\n+Payload: {\"plc\":\"PLC_n1\",\"index\":0,\"value\":15}\n+```\n+\n+Confirmacion de escritura:\n+\n+```txt\n+topic/registerCalibration/data\n+```\n+\n+Nota: en pruebas locales EMQX permite conexion anonima. TLS, usuarios y ACL quedan para fase posterior.\n"
+                },
+                {
+                    "date": 1779311305331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n | `topic_plc_status` | Ver estado: `ONLINE`, `DEGRADED`, `READ_TIMEOUT`, `PLC_OFFLINE`. |\n | `#` | Ver todo durante pruebas. |\n \n \n-CREDENCIALES\n+CREDENCIALES para Websocket\n \n usuario: admin\n \n contraseña: jepkom123\n"
+                },
+                {
+                    "date": 1779311357545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,12 @@\n | `#` | Ver todo durante pruebas. |\n \n \n CREDENCIALES para Websocket\n+en consola npm run dev antes de navegar:\n \n+url: http://localhost:18083/#/websocket\n+\n usuario: admin\n \n contraseña: jepkom123\n \n"
+                }
+            ],
+            "date": 1779285560687,
+            "name": "Commit-0",
+            "content": "\r\nTopic para visualizar todos los datos MQTT\r\n\r\n    topic_plc_data\r\n\r\nTopic para ver unicamente los cambios\r\n    \r\n    topic_plc_changes\r\n\r\nPublicar el paquete completoe de datos leidos:\r\n\r\n    consulte/topic\r\n\r\nForzar una lectura desde MQTT\r\n\r\n    cosulte/write\r\n\r\nPara enviar un escritura al PLC\r\n\r\n    topic/registerCalibration/data  \r\n\r\n\r\nUsuario de lWebsocket\r\n\r\nusuario: jepkom123\r\n\r\ncontraseña:  public\r\n\r\n"
+        }
+    ]
+}

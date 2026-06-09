@@ -1,0 +1,18 @@
+{
+    "sourceFile": "TOPICS.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1779285489807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1779285489807,
+            "name": "Commit-0",
+            "content": "\r\nTopic para visualizar todos los datos MQTT\r\n\r\n    topic_plc_data\r\n\r\nTopic para ver unicamente los cambios\r\n    \r\n    topic_plc_changes\r\n\r\nPublicar el paquete completoe de datos leidos:\r\n\r\n    consulte/topic\r\n\r\nForzar una lectura desde MQTT\r\n\r\n    cosulte/write\r\n\r\nPara enviar un escritura al PLC\r\n\r\n    topic/registerCalibration/data  \r\n\r\n"
+        }
+    ]
+}
